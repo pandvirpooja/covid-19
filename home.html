@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>login page</title>
+
+</head>
+
+<style type="text/css">
+    div{
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        margin:0 auto ;
+        padding: 120px;
+        box-sizing: border-box;
+        background-image: url('/hd-nature-background.jpg');     
+   }
+
+</style>
+<body>
+   <center> <h1>welcome to login page</h1></center>
+  
+   <hr>
+   <div>
+    
+    username:<br>
+    <input type="text" name="text" id="username">
+    <br><br>
+
+    password:<br>
+    <input type="password" name="text" id="password">
+    <br><br>
+
+    <button ondblclick="login()">submit</button>
+   </div>
+   <script type="text/javascript">
+       function login()
+       {
+
+       var uname=document.getElementById('username').value;
+       var pass=document.getElementById('password').value;
+
+       if(uname=="world"&& pass=="123")
+
+       {
+         location.assign("http://127.0.0.1:5500/page.html")
+
+       }
+
+     else{
+
+        Window.alert("login faild");
+     }
+       
+
+       }
+
+
+   </script>
+</body>
+</html>
